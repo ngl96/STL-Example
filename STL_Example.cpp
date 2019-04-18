@@ -1,13 +1,11 @@
-// rec13_test.cpp
-
 #include <iostream>
 #include <fstream>
-#include <vector>      // task 1
-#include <list>        // task 2
-#include <algorithm>   // task 3
-#include <string>      // task 21
-#include <set>         // task 22
-#include <map>         // task 23
+#include <vector>  
+#include <list>    
+#include <algorithm>
+#include <string>     
+#include <set>     
+#include <map>         
 using namespace std;
 
 void task9(const list<int>& lst) {
