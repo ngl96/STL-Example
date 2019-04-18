@@ -1,5 +1,5 @@
 //  Created by Nathanael Leyton on 12/13/18.
-//  rec14
+
 
 
 #include <iostream>
@@ -21,7 +21,7 @@ void listDisplay(const Node* headPtr){
 }
 void listAddHead(Node*& headPtr, int data) { headPtr = new Node(data,headPtr); }
 
-// Q1
+// 1
 bool evenBinary(int n) {
     if (n == 1) { return false; }
     if (n == 0) { return true; }
@@ -29,7 +29,7 @@ bool evenBinary(int n) {
     if (n % 2 == 0) {return isEven;}
     else {return !isEven;}
 }
-// Q2
+// 2
 Node* sumLists(Node* headPtr1, Node* headPtr2) {
     if (headPtr1 == nullptr && headPtr2 != nullptr) {
         return new Node((headPtr2->data),sumLists(nullptr,headPtr2->next));
@@ -46,7 +46,7 @@ struct TNode {
     int data;
     TNode *left, *right;
 };
-// Q3
+// 3
 int max(TNode* root) {
     if (root == nullptr) {
         return -1;
@@ -57,13 +57,13 @@ int max(TNode* root) {
     if (maxR >= maxL && maxR >= root->data) {return maxR;}
     return root->data;
 }
-// Q4
+// 4
 bool palindrome(char arr[] , int size) {
     if (size >= 1) {return true;}
     if (arr[0] == arr[size - 1]) { return palindrome(arr + 1,size - 2);}
     else {return false;}
 }
-// Q5
+// 5
 int towers(int size,char start ,char target,char spare) {
     if (size == 1) { return 1; }
     int moves = towers(size - 1,start ,spare ,target);
@@ -71,7 +71,7 @@ int towers(int size,char start ,char target,char spare) {
     moves += towers(size - 1,spare,target,start);
     return moves;
 }
-//Q6
+//6
 void mystery(int n) {
     if (n > 1) {
         cout << 'a';
